@@ -77,7 +77,7 @@ const teams = [
     subName: "Galusha",
     image: "nwt4.jpg",
     pointsPerWin: 3.0,
-    wins: 5,
+    wins: 6,
     id: 9,
   },
   {
@@ -109,7 +109,7 @@ const teams = [
     subName: "Crawford",
     image: "new-brunswick.png",
     pointsPerWin: 3.0,
-    wins: 6,
+    wins: 8,
     id: 13,
   },
   {
@@ -133,7 +133,7 @@ const teams = [
     subName: "McCarville",
     image: "northern-ontario.jpg",
     pointsPerWin: 1.7,
-    wins: 5,
+    wins: 7,
     id: 16,
   },
   {
