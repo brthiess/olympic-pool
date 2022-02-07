@@ -76,7 +76,7 @@ const teams = [
     subName: "Glukhov",
     gender: "male",
     image: "russia.png",
-    pointsPerWin: 2.0,
+    pointsPerWin: 2.5,
     wins: 0,
     id: 8,
   },
@@ -85,7 +85,7 @@ const teams = [
     subName: "Krause",
     gender: "male",
     image: "denmark.png",
-    pointsPerWin: 2.3,
+    pointsPerWin: 2.6,
     wins: 0,
     id: 9,
   },
@@ -175,7 +175,7 @@ const teams = [
     subName: "Dupont",
     gender: "female",
     image: "denmark.png",
-    pointsPerWin: 3.0,
+    pointsPerWin: 3.3,
     wins: 0,
     id: 19,
   },
@@ -191,7 +191,7 @@ const teams = [
 ];
 const users = [
   {
-    teamName: "Up Your Arsenault",
+    teamName: "Norway I'm Winning",
     realName: "",
     picks: [6, 11, 16, 8, 1, 14],
     img: "rock.png",

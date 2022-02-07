@@ -180,7 +180,7 @@ ul {
   color: white;
   justify-content: space-between;
   font-size: 30px;
-  padding: 0 40px 0 60px;
+  padding: 0 40px 0 20px;
 }
 .text {
   display: flex;

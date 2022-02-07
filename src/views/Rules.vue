@@ -57,12 +57,12 @@
       <div class="row">
         <p class="province">Russia</p>
         <p class="team-name">Glukhov</p>
-        <p class="points-per-win">2.2</p>
+        <p class="points-per-win">2.5</p>
       </div>
       <div class="row">
         <p class="province">Denmark</p>
         <p class="team-name">Krause</p>
-        <p class="points-per-win">2.5</p>
+        <p class="points-per-win">2.6</p>
       </div>
       <div class="row">
         <p class="province">China</p>
@@ -120,7 +120,7 @@
       <div class="row">
         <p class="province">Denmark</p>
         <p class="team-name">Dupont</p>
-        <p class="points-per-win">3.0</p>
+        <p class="points-per-win">3.3</p>
       </div>
     </div>
   </div>
