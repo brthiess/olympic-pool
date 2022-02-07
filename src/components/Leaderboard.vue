@@ -8,7 +8,7 @@
         <div class="left">&#9825;</div>
       </div>
       <div class="text">
-        <span class="scotties">Scotties Pool</span>
+        <span class="scotties">Olympic Pool</span>
         <span class="leaderboard-text">Leaderboard</span>
       </div>
     </div>
