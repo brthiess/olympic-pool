@@ -3,7 +3,11 @@
     <h1>Stats</h1>
     <h2>Most Popular Teams</h2>
     <ul>
-      <li v-for="team in mostPopularTeams" :key="team.teamId">
+      <li
+        :class="team.gender"
+        v-for="team in mostPopularTeams"
+        :key="team.teamId"
+      >
         <div class="team-logo">
           <img :src="team.image" />
         </div>
@@ -25,7 +29,7 @@
     </ul>
     <h2>Best Performing Teams</h2>
     <ul>
-      <li v-for="team in bestTeams" :key="team.teamId">
+      <li :class="team.gender" v-for="team in bestTeams" :key="team.teamId">
         <div class="team-logo">
           <img :src="team.image" />
         </div>
@@ -134,14 +138,28 @@ ul {
 li {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   background: #eee;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 25px;
   display: flex;
   height: 100px;
   align-items: center;
   width: 100%;
   margin: 10px 0;
+  position: relative;
 }
-
+li.male:after,
+li.female:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 100px;
+}
+li.male:after {
+  background: #2980b9;
+}
+li.female:after {
+  background: #c0392b;
+}
 .team-logo {
   height: 50px;
   margin-right: 20px;

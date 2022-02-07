@@ -197,6 +197,27 @@ const users = [
     img: "rock.png",
     id: 1,
   },
+  {
+    teamName: "Rock 'Em",
+    realName: "",
+    picks: [15, 13, 11, 5, 3, 1],
+    img: "rock.png",
+    id: 2,
+  },
+  {
+    teamName: "Olympic Rings",
+    realName: "",
+    picks: [1, 3, 7, 11, 13, 18],
+    img: "rock.png",
+    id: 3,
+  },
+  {
+    teamName: "Medal Heads",
+    realName: "",
+    picks: [1, 2, 5, 11, 12, 13],
+    img: "rock.png",
+    id: 4,
+  },
 ];
 
 const routes = [

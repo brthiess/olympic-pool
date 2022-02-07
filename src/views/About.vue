@@ -9,7 +9,11 @@
     </h3>
     <h4>Picks</h4>
     <ul>
-      <li v-for="(pick, index) in currentUser.picks" :key="index">
+      <li
+        :class="getTeamFromId(pick).gender"
+        v-for="(pick, index) in currentUser.picks"
+        :key="index"
+      >
         <div class="team-logo">
           <img :src="getTeamFromId(pick).image" />
         </div>
@@ -108,13 +112,27 @@ li {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   background: #eee;
   margin: 30px auto;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 25px;
   display: flex;
   height: 100px;
   align-items: center;
   max-width: 400px;
+  position: relative;
 }
-
+li.male:after,
+li.female:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 100px;
+}
+li.male:after {
+  background: #2980b9;
+}
+li.female:after {
+  background: #c0392b;
+}
 .total-points {
   display: flex;
   flex-flow: column;

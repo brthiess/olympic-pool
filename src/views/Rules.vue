@@ -3,14 +3,16 @@
     <h1>Rules</h1>
     <div class="rules">
       <p>
-        The rules are simple. Pick 6 teams - 3 in each gender - and for each win
-        one of your teams get, you get a certain amount of points per win. The
+        The rules are simple.
+        <strong> Pick 6 teams - 3 in each gender</strong> - and for each win one
+        of your teams get, you get a certain amount of points per win. The
         amount of points you get per win depends on which teams you pick. Better
         teams get less points per win and worse teams get more points per win.
       </p>
 
       <p>Every draw (including tie-breakers and playoffs) will count.</p>
 
+      <p>Deadline to enter is 5am MT Wednesday</p>
       <div class="row">
         <p class="province"><strong>Country</strong></p>
         <p class="team-name"><strong>Team</strong></p>
