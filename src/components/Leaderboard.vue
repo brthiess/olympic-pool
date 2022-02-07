@@ -2,10 +2,11 @@
   <div class="leaderboard-container">
     <div class="leaderboard">
       <div class="logo">
-        <div class="top">&#9825;</div>
-        <div class="right">&#9825;</div>
-        <div class="bottom">&#9825;</div>
-        <div class="left">&#9825;</div>
+        <div class="one">&#9675;</div>
+        <div class="two">&#9675;</div>
+        <div class="three">&#9675;</div>
+        <div class="four">&#9675;</div>
+        <div class="five">&#9675;</div>
       </div>
       <div class="text">
         <span class="scotties">Olympic Pool</span>
@@ -125,21 +126,42 @@ ul {
   height: 50px;
   margin-right: 20px;
 }
-.top,
-.right,
-.left,
-.bottom {
+.one,
+.two,
+.three,
+.four,
+.five {
   position: absolute;
-  font-size: 40px;
+  font-size: 80px;
   color: rgba(255, 255, 255, 0.533);
 }
-.top {
-  top: -17px;
+.one,
+.two,
+.three {
+  top: -45px;
 }
-.right {
-  transform: rotate(90deg);
-  top: 0px;
-  left: 17px;
+.four,
+.five {
+  top: -30px;
+}
+.one {
+  color: #004bcc;
+}
+.two {
+  left: 40px;
+  color: #333c;
+}
+.three {
+  left: 80px;
+  color: #ef304dcc;
+}
+.four {
+  left: 20px;
+  color: #fcb22dcc;
+}
+.five {
+  left: 60px;
+  color: #00a75099;
 }
 .bottom {
   top: 17px;
@@ -151,7 +173,7 @@ ul {
   left: -17px;
 }
 .leaderboard {
-  background: linear-gradient(to right, #f40e04, #f40e04);
+  background: linear-gradient(to right, #0082c9, #0082c9);
   height: 100px;
   display: flex;
   align-items: center;

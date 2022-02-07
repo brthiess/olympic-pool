@@ -41,12 +41,12 @@
       <div class="row">
         <p class="province">USA</p>
         <p class="team-name">Shuster</p>
-        <p class="points-per-win">1.5</p>
+        <p class="points-per-win">1.6</p>
       </div>
       <div class="row">
         <p class="province">Italy</p>
         <p class="team-name">Retornaz</p>
-        <p class="points-per-win">1.6</p>
+        <p class="points-per-win">1.7</p>
       </div>
       <div class="row">
         <p class="province">Norway</p>
@@ -57,17 +57,17 @@
       <div class="row">
         <p class="province">Russia</p>
         <p class="team-name">Glukhov</p>
-        <p class="points-per-win">2.0</p>
+        <p class="points-per-win">2.2</p>
       </div>
       <div class="row">
         <p class="province">Denmark</p>
         <p class="team-name">Krause</p>
-        <p class="points-per-win">2.3</p>
+        <p class="points-per-win">2.5</p>
       </div>
       <div class="row">
         <p class="province">China</p>
         <p class="team-name">Ma</p>
-        <p class="points-per-win">3</p>
+        <p class="points-per-win">3.0</p>
       </div>
 
       <br /><br />
@@ -92,26 +92,26 @@
         <p class="points-per-win">1.4</p>
       </div>
       <div class="row">
-        <p class="province">Korea</p>
-        <p class="team-name">Kim</p>
-        <p class="points-per-win">1.9</p>
+        <p class="province">Russia</p>
+        <p class="team-name">Kovaleva</p>
+        <p class="points-per-win">1.7</p>
       </div>
       <div class="row">
         <p class="province">Japan</p>
         <p class="team-name">Fujisawa</p>
         <p class="points-per-win">1.8</p>
       </div>
-
-      <div class="row">
-        <p class="province">Russia</p>
-        <p class="team-name">Kovaleva</p>
-        <p class="points-per-win">1.7</p>
-      </div>
       <div class="row">
         <p class="province">USA</p>
         <p class="team-name">Peterson</p>
-        <p class="points-per-win">2.0</p>
+        <p class="points-per-win">1.8</p>
       </div>
+      <div class="row">
+        <p class="province">Korea</p>
+        <p class="team-name">Kim</p>
+        <p class="points-per-win">1.9</p>
+      </div>
+
       <div class="row">
         <p class="province">China</p>
         <p class="team-name">Han</p>
