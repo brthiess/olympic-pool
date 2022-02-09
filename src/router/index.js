@@ -344,6 +344,20 @@ const users = [
     img: "rock.png",
     id: 22,
   },
+  {
+    teamName: "Matt's Mistakes",
+    realName: "",
+    picks: [1, 2, 4, 11, 12, 15],
+    img: "rock.png",
+    id: 23,
+  },
+  {
+    teamName: "Hazel's Picks",
+    realName: "",
+    picks: [20, 19, 15, 7, 9, 4],
+    img: "rock.png",
+    id: 24,
+  },
 ];
 
 const routes = [
