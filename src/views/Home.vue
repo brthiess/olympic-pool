@@ -7,6 +7,7 @@
 <script>
 // @ is an alias to /src
 import Leaderboard from "@/components/Leaderboard.vue";
+import store from "../state/user-state";
 
 export default {
   name: "Home",
@@ -15,7 +16,11 @@ export default {
   },
   props: {
     teams: Array,
-    users: Array,
+  },
+  data() {
+    return {
+      users: store.users,
+    };
   },
 };
 </script>

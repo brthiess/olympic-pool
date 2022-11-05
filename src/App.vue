@@ -27,6 +27,16 @@
   </div>
 </template>
 
+<script>
+import { loadUsers } from "./state/user-state";
+export default {
+  name: "Main",
+  created() {
+    loadUsers();
+  },
+};
+</script>
+
 <style>
 * {
   font-family: "Open Sans", sans-serif;

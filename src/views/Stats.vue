@@ -55,11 +55,12 @@
 </template>
 
 <script>
+import store from "../state/user-state";
+
 export default {
   name: "About",
   props: {
     teams: Array,
-    users: Array,
   },
   methods: {
     getTeamFromId(teamId) {
@@ -103,6 +104,11 @@ export default {
       }
       return bestTeams.sort((a, b) => (a.totalPoints < b.totalPoints ? 1 : -1));
     },
+  },
+  data() {
+    return {
+      users: store.users,
+    };
   },
 };
 </script>

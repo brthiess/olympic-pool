@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import About from "../views/Player.vue";
 import Rules from "../views/Rules.vue";
 import Stats from "../views/Stats.vue";
 
@@ -189,201 +189,31 @@ const teams = [
     id: 20,
   },
 ];
-const users = [
-  {
-    teamName: "Garden of Edin",
-    realName: "",
-    picks: [1, 4, 7, 15, 16, 18],
-    img: "rock.png",
-    id: 1,
-  },
-  {
-    teamName: "Rock 'Em",
-    realName: "",
-    picks: [15, 13, 11, 5, 3, 1],
-    img: "rock.png",
-    id: 2,
-  },
-  {
-    teamName: "Olympic Rings",
-    realName: "",
-    picks: [1, 3, 7, 11, 13, 18],
-    img: "rock.png",
-    id: 3,
-  },
-  {
-    teamName: "Medal Heads",
-    realName: "",
-    picks: [1, 2, 5, 11, 12, 13],
-    img: "rock.png",
-    id: 4,
-  },
-  {
-    teamName: "de cruzin’",
-    realName: "",
-    picks: [20, 16, 15, 8, 7, 3],
-    img: "rock.png",
-    id: 5,
-  },
-  {
-    teamName: "Holy Sheet",
-    realName: "",
-    picks: [18, 12, 11, 3, 2, 1],
-    img: "rock.png",
-    id: 6,
-  },
-  {
-    teamName: "( ͡° ͜ʖ ͡°)",
-    realName: "",
-    picks: [20, 18, 16, 8, 7, 2],
-    img: "rock.png",
-    id: 7,
-  },
-  {
-    teamName: "Light & Inside",
-    realName: "",
-    picks: [4, 1, 2, 16, 18, 20],
-    img: "rock.png",
-    id: 8,
-  },
-  {
-    teamName: "Everyday I'm Hasselborgin'",
-    realName: "",
-    picks: [1, 2, 3, 12, 13, 18],
-    img: "rock.png",
-    id: 9,
-  },
-  {
-    teamName: "TBD",
-    realName: "",
-    picks: [1, 2, 3, 11, 12, 16],
-    img: "rock.png",
-    id: 10,
-  },
-  {
-    teamName: "Stealers",
-    realName: "",
-    picks: [1, 2, 5, 12, 13, 14],
-    img: "rock.png",
-    id: 11,
-  },
-  {
-    teamName: "Back to Back",
-    realName: "",
-    picks: [1, 2, 6, 11, 12, 14],
-    img: "rock.png",
-    id: 12,
-  },
-  {
-    teamName: "Get Your Sheet Together",
-    realName: "",
-    picks: [1, 4, 7, 12, 16, 18],
-    img: "rock.png",
-    id: 13,
-  },
-  {
-    teamName: "Manitoba Tuckers",
-    realName: "",
-    picks: [1, 4, 5, 11, 14, 17],
-    img: "rock.png",
-    id: 14,
-  },
-  {
-    teamName: "Silent Takeout",
-    realName: "",
-    picks: [1, 2, 8, 12, 15, 18],
-    img: "rock.png",
-    id: 15,
-  },
-  {
-    teamName: "Make the Final",
-    realName: "",
-    picks: [1, 2, 8, 11, 13, 15],
-    img: "rock.png",
-    id: 16,
-  },
-  {
-    teamName: "TinyTwo",
-    realName: "",
-    picks: [2, 4, 5, 12, 13, 16],
-    img: "rock.png",
-    id: 17,
-  },
-  {
-    teamName: "The Canadian Kickers",
-    realName: "",
-    picks: [1, 2, 7, 12, 13, 18],
-    img: "rock.png",
-    id: 18,
-  },
-  {
-    teamName: "The Outsliders",
-    realName: "",
-    picks: [1, 2, 4, 11, 13, 12],
-    img: "rock.png",
-    id: 19,
-  },
-  {
-    teamName: "Picked Places I want to Visit",
-    realName: "",
-    picks: [1, 2, 4, 11, 13, 19],
-    img: "rock.png",
-    id: 20,
-  },
-  {
-    teamName: "Sweeping Beauties",
-    realName: "",
-    picks: [1, 2, 4, 12, 11, 15],
-    img: "rock.png",
-    id: 21,
-  },
-  {
-    teamName: "Buchanan Baba",
-    realName: "",
-    picks: [1, 2, 4, 12, 11, 13],
-    img: "rock.png",
-    id: 22,
-  },
-  {
-    teamName: "Matt's Mistakes",
-    realName: "",
-    picks: [1, 2, 4, 11, 12, 15],
-    img: "rock.png",
-    id: 23,
-  },
-  {
-    teamName: "Hazel's Picks",
-    realName: "",
-    picks: [20, 19, 15, 7, 9, 4],
-    img: "rock.png",
-    id: 24,
-  },
-];
 
 const routes = [
   {
     path: "/",
     name: "Leaderboard",
     component: Home,
-    props: { users, teams },
+    props: { teams },
   },
   {
     path: "/player/:id",
     name: "Player",
     component: About,
-    props: { users, teams },
+    props: { teams },
   },
   {
     path: "/stats/",
     name: "Stats",
     component: Stats,
-    props: { users, teams },
+    props: { teams },
   },
   {
     path: "/rules/",
     name: "Rules",
     component: Rules,
-    props: { users, teams },
+    props: { teams },
   },
 ];
 

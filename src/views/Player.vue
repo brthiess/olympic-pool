@@ -41,15 +41,24 @@
 </template>
 
 <script>
+import store from "../state/user-state";
+
 export default {
-  name: "About",
+  name: "Player",
   props: {
     teams: Array,
-    users: Array,
+  },
+  data() {
+    return {
+      users: store.users,
+    };
   },
   computed: {
     currentUser() {
-      return this.users[this.$route.params.id - 1];
+      let currentUser = this.users.filter((user) => {
+        return user.id == this.$route.params.id;
+      })[0];
+      return currentUser;
     },
   },
   methods: {
