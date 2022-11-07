@@ -14,7 +14,21 @@
       </div>
     </div>
     <ul>
-      <li v-for="(leader, index) in leaders" :key="leader.teamName">
+      <div v-if="notLoaded" class="skeleton">
+        <li class="skeleton-list" v-for="index in 10" :key="index">
+          <div class="place" :class="getLeaderboardClass(index)">
+            {{ index }}
+            <span class="ordinal">{{ getLeaderboardPlaceText(index) }}</span>
+          </div>
+          <div class="avatar-name">
+            <div class="name skeleton-name"><Shimmer></Shimmer></div>
+          </div>
+
+          <div class="total-points"><Shimmer></Shimmer></div>
+          <div class="chevron">›</div>
+        </li>
+      </div>
+      <li v-else v-for="(leader, index) in leaders" :key="leader.teamName">
         <router-link class="link" :to="'/player/' + leader.id"></router-link>
         <div class="place" :class="getLeaderboardClass(index + 1)">
           {{ index + 1 }}
@@ -35,13 +49,23 @@
 </template>
 
 <script>
+import Shimmer from "./Shimmer.vue";
 export default {
   name: "Leaderboard",
   props: {
     teams: Array,
     users: Array,
   },
+  components: {
+    Shimmer,
+  },
   computed: {
+    notLoaded() {
+      if (!this.users || this.users.length == 0) {
+        return true;
+      }
+      return false;
+    },
     leaders() {
       let leaders = [];
       for (let i = 0; i < this.users.length; i++) {
@@ -249,6 +273,12 @@ li {
   font-weight: 500;
   font-size: 16px;
 }
+.name {
+  width: 170px;
+}
+.skeleton-name {
+  height: 25px;
+}
 .avatar {
   width: 50px;
   height: 50px;
@@ -262,9 +292,7 @@ img {
   border: 3px solid #ccc;
   border-radius: 30px;
 }
-.name {
-  width: 170px;
-}
+
 .link {
   position: absolute;
   left: 0;

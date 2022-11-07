@@ -22,17 +22,25 @@
         <div class="nav-text">Rules</div>
         <router-link class="nav-link" :to="'/rules/'"></router-link>
       </span>
+      <span
+        class="leaderboard-nav-item"
+        :class="$route.name == 'Account' ? ' active ' : ''"
+        ><i class="nav-icon fas fa-user"></i>
+        <div class="nav-text">Account</div>
+        <router-link class="nav-link" :to="'/account/'"></router-link>
+      </span>
     </nav>
     <router-view />
   </div>
 </template>
 
 <script>
-import { loadUsers } from "./state/user-state";
+import { loadUsers, loadCurrentUser } from "./state/user-state";
 export default {
   name: "Main",
   created() {
     loadUsers();
+    loadCurrentUser();
   },
 };
 </script>

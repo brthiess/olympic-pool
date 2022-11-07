@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/Player.vue";
 import Rules from "../views/Rules.vue";
 import Stats from "../views/Stats.vue";
+import Account from "../views/Account.vue";
 
 Vue.use(VueRouter);
 
@@ -214,6 +215,11 @@ const routes = [
     name: "Rules",
     component: Rules,
     props: { teams },
+  },
+  {
+    path: "/account/",
+    name: "Account",
+    component: Account,
   },
 ];
 
